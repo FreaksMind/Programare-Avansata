@@ -42,7 +42,14 @@ public class Road {
 	}
 
 	public void setLength(int length) {
-		this.length = length;
+		int euclidianDistance = (int) Math.sqrt(Math.pow(this.finishPoint.getX() - this.startPoint.getX(), 2)
+				+ Math.pow(this.finishPoint.getY() - this.startPoint.getX(), 2));
+		if (length < euclidianDistance) {
+			System.out.println(
+					"The length of a road should not be less than the euclidian distance between the location coordinates.");
+		} else {
+			this.length = length;
+		}
 	}
 
 	public int getSpeedLimit() {
