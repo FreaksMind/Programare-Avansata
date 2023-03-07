@@ -1,0 +1,12 @@
+Problem:  An instance of the "Best Route Problem" consists of locations and roads. Locations may be cities, airports, gas stations, etc.
+Two locations may be connected by a road, or not. Roads may be highways, express, country, etc.
+
+    Each location has a name, type and x, y coordinates (assume that the locations are placed in a cartesian coordinate system).
+    Each road has a type, length and a speed limit. The length of a road should not be less than the euclidian distance between the location coordinates. 
+
+We consider the problem of determining the "best" route from one location to another.
+
+The main specifications of the application are: 
+
+Solution: I created the specific class for Location and Road. Then I derived classes for Locations and Roads. To check whether we have a path between 2 locations I implemented
+a BFS algorithm. In the problem class I have a method to add Roads that contains the locations. In this method I added checks for duplicates.
