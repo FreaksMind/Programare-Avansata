@@ -1,0 +1,11 @@
+Problem:
+
+    Create a Maven project.
+    Create an object-oriented model of the problem. Students and projects have names. Make sure the objects of these classes are comparable.
+    Create the students and the projects described in the example. Use streams in order to easily create the objects.
+    Put all the students in a LinkedList and print them sorted by their names.
+    Put all the projects in a TreeSet and print them sorted by their names. 
+    
+    Solution:
+    
+    Am creat proiectul Maven, dupa am adaugat cele doua clase Student si Project, clase care implementeaza Comparable. In ambele clase am o variabila name cu getterul si setterul aferent, iar in Main am "construit" structurile cerute
