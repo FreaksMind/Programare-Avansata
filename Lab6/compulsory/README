@@ -1,0 +1,15 @@
+Problem:
+ Create the following components:
+
+    The main frame of the application.
+    A configuration panel for introducing parameters regarding the number of dots and lines and a button for creating a new game. The panel must be placed at the top part of the frame. The panel must contain at least one label and one input component.
+    A canvas (drawing panel) for drawing the board. Draw the dots and the lines according to the values specified in the config panel. This panel must be placed in the center part of the frame.
+    A control panel for managing the game. This panel will contain the buttons: Load, Save, Exit ,etc. and it will be placed at the bottom part of the frame. 
+    
+Solution
+
+Am implementat cate o clasa pentru fiecare componenta(configuration panel, canvas, control panel), iar in clasa MainFrame am initializat cate un obiect 
+din fiecare clasa si le-am adaugat la frame-ul aplicatiei.
+Pentru a desena punctele am calculat mijlocul canvas-ului si intr-un for de la 0 la numarul de puncte, calculez coordonatele x y pentru fiecare punct 
+cu formula: centerX + (int) (radius * Math.cos(2 * Math.PI * i / numVertices)), respectiv centerY + (int) (radius * Math.sin(2 * Math.PI * i / numVertices))
+si le-am adaugat in cele 2 array-uri, pentru fiecare axa. Pentru liniile dintre puncte, intr-un for, pentru fiecare punct desenez linii catre toate celelalte puncte
